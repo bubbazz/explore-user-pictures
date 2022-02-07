@@ -1,0 +1,24 @@
+.green {
+  color: var(--c-green-400);
+}
+.red {
+  color: var(--c-red-400);
+}
+.app-drawer-header {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.125rem;
+  color: var(--c-dark-m5);
+  padding: 0 1rem;
+}
+.app-footer-icon-active {
+  color: var(--c-ctrl-text);
+}
+.fa-layers-action {
+  .active {
+    color: var(--c-ctrl-text);
+  }
+}
+.app-content-left-border {
+  border-left: 1px solid var(--c-dark-m2);
+}

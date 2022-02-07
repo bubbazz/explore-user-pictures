@@ -1,0 +1,25 @@
+<style>
+    .close {
+        background-color: black;
+        align-self: center;
+        justify-self: right;
+        font-size: 1rem;
+    }
+</style>
+<div class="modal-body modal-max">
+    <!-- height-1200 width-800 -->
+    <div class="modal-header">
+        <h1>{{getRessource('ModalHeader')}}</h1>
+        <i class="md-btn" (click)="closeModal()">{{getGlobal('Cancel')}}</i>
+    </div>
+    <div class="content">
+        <ng-container *ngIf="loaded">
+            <app-yassi [(img)]="profileImg" [exgModalService]="modalService"></app-yassi>
+        </ng-container>
+        <ng-container *ngIf="!loaded">
+            <label class="md-btn" type="button" for="uploadInput">{{getRessource('Load')}}</label>
+        </ng-container>
+        <input #ImageFile id="uploadInput" type="file" style="display:none" accept="image/*"
+            (change)="onFileChange($event)">
+    </div>
+</div>

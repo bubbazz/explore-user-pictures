@@ -1,0 +1,10 @@
+{
+
+  "CurrencySymbol": "€",
+  "DateFormat"    : "yyyy/MM/dd hh:mm aa",
+  "DateFormatShort": "dd.MM.yyyy",
+  "DateFormatTimeShort": "HH:mm",
+  "ExcRestService": {
+    "Test": "Hallo"
+  }
+}

@@ -1,0 +1,64 @@
+.theme-default {
+  // Fontawesome Duo Icons
+  --fa-primary-color: #F7A600;
+  --fa-secondary-color: #58C8E0;
+  --fa-primary-opacity: 0.9;
+  --fa-secondary-opacity: 0.8;
+
+
+  --c-dark: #205394;
+  @include var-color-create("dark", #205394);
+
+  --c-light: #F7A600;
+  @include var-color-create("light", #F7A600);
+
+  --c-neutral: #FAFAFA;
+  @include var-color-create("neutral", #FAFAFA);
+  --c-neutral-inverse: #090909;
+  @include var-color-create("neutral-inverse", #090909);
+
+  // Indicator
+  @include var-color-create-s("red", #d9534f);
+  @include var-color-create-s("yellow", #FAA933);
+  @include var-color-create-s("green", #5cb85c);
+
+  // Ctrl
+  --c-ctrl-back: #FAFAFA;
+  --c-ctrl-text: #2A6DC2;
+  --c-ctrl-text-inverse: white;
+
+  --c-ctrl-text-edit: black;
+
+  --c-ctrl-border: #2A6DC2;
+  --c-ctrl-border-inverse: #FFFFFF;
+  --c-crtl-border-active: #205394;
+  --c-ctrl-border-accent: #F7A600;
+
+  //Text
+  --c-text: #090909; //color: rgba(0,0,0,.6);
+  --c-text-400: #717171;
+  @include var-mix-create("dark", #000000);
+  @include var-mix-create("light", #FFFFFF);
+
+  //Search Bar
+  --search-tx-color-100: rgba(0,0,0,.5);
+  --search-tx-color-50: gray;
+  --search-background-color-50: #F1F3F4;
+  --search-background-color-100: #E8EAED;
+
+  // Scrollbars
+  --scroll-back: transparent;
+  --scroll-track: #AAA;
+  --scroll-thumb: #666;
+
+  background: var(--c-neutral);
+  color: var(--c-text);
+
+
+  .splash.loading{
+    background-image: url('../images/waiting.svg');
+  }
+  .splash.empty{
+    background-image: url('../images/empty.svg');
+  }
+}

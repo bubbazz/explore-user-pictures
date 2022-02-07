@@ -1,0 +1,14 @@
+.mycanvas {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.test{
+    opacity: 1;
+    border: 2px solid #000000;
+}
+
+.buttons {
+    display: flex;
+}

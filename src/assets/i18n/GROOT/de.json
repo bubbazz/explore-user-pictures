@@ -1,0 +1,15 @@
+{
+  "CurrencySymbol" : "€",
+  "DateFormat"     : "dd.MM.yyyy HH:mm:ss",
+  "DateFormatShort": "dd.MM.yyyy",
+  "DateFormatTimeShort": "HH:mm",
+  "ExcRestService" : {
+    "Test": "Hallo"
+  },
+  "ExgSigninUiComponent" : {
+    "LoginHeader": "Anmeldung",
+    "Username": "Benutzername",
+    "Password": "Passwort",
+    "LoginButtonText": "anmelden"
+  }
+}

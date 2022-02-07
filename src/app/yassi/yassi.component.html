@@ -1,0 +1,11 @@
+<div class="mycanvas">
+    <canvas #pictureCanvas class="test" (mousewheel)="onScrollCanvas($event)" (wheel)="onScrollCanvas($event)"
+        (mousemove)="move($event)" (mousedown)="setMouseDown(true,$event)" (mouseup)="setMouseDown(false,$event)"
+        (mouseout)="setMouseDown(false,$event)"> </canvas>
+</div>
+<div class="buttons ">
+    <label class="md-btn" type="button" for="uploadInput">{{getRessource('Load')}}</label>
+    <input #slide type="range" step="0.1" [value]="zoom.scaleValue" [max]="zoom.max" [min]="zoom.min"
+        (change)="onScrollScale(slide.value)">
+    <button class="md-btn" (click)="save()">{{getRessource('Save')}}</button>
+</div>

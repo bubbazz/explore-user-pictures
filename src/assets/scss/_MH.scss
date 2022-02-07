@@ -1,0 +1,121 @@
+
+.layout{
+  &-1-auto-grid-1-1{
+    @extend %layout;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    .span-layout{
+      grid-column-end: span 2;
+    }
+    .span-rows{
+      grid-row-end: span 2;
+    }
+  }
+}
+
+.app-scope{
+  exg-search-bar {
+    box-shadow: none;
+    border-right: 1px var(--c-dark-m2) solid;
+  }
+}
+.typo{
+  &-inline-info{
+    border: 1px solid var(--c-dark-m1);
+    padding: 1rem;
+    background-color: var(--c-dark-m0);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    >i{
+      font-size: 2rem;
+      margin: 0 1rem 0 0;
+      color: var(--c-ctrl-text);
+    }
+    >span{
+      width:auto;
+    }
+  }
+}
+.timeline {
+  &-date{
+    padding: 2px 1rem 1rem 1rem;
+  }
+  &-element {
+    margin: 0 0 0 1rem;
+    position: relative;
+    border-left: 1px solid var(--c-dark-m2);
+    padding: 2px 0 1rem 1.75rem;
+    em:first-of-type{margin-bottom: 0.25rem;}
+    &:before{
+      content: "";
+      height: 15px;
+      width: 15px;
+      left: -11px;
+      top: 0;
+      border-radius: 50%;
+      border: 3px solid var(--c-dark-200);
+      background-color: var(--c-dark-300);
+      position: absolute;
+    }
+    &.tl-red:before{
+      border-color: var(--c-red-300);
+      background-color: var(--c-red-400);
+    }
+    &.tl-green:before{
+      border-color: var(--c-green-300);
+      background-color: var(--c-green-400);
+    }
+    &:last-of-type{
+      &:after{
+
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: -8px;
+        bottom: 0;
+        border-radius: 50%;
+        background-color: var(--c-yellow-300);
+        position: absolute;
+      }
+    }
+  }
+}
+
+.inbound-table {
+  margin: 1rem;
+  background-color: var(--c-dark-m0);
+  border: 1px solid var(--c-dark-m2);
+  border-radius: 4px;
+  height: 18rem;
+  position: relative;
+}
+.typo-meta {
+  position: absolute;
+  right: 1rem;
+  top: 2px;
+  font-size: smaller;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: var(--c-dark-m1);
+  &:after
+  {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    border-color: var(--c-dark-m1) transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -6px;
+    left: 0px;
+  }
+}
+.md-menu{
+  .list-row{
+    cursor: pointer;
+    min-width: 280px;
+  }
+}
